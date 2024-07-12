@@ -20,7 +20,7 @@ public class PostRepository {
 
 	public ResponseDto PostData(RequestDto data) throws JsonProcessingException {
 		
-		StoredProcedureQuery q = entityManager.createStoredProcedureQuery("apps.xxcust_post_data_api");
+		StoredProcedureQuery q = entityManager.createStoredProcedureQuery("apps.XXCUST_EMP_POST_API");
 		
 		q.registerStoredProcedureParameter("Request",String.class,ParameterMode.IN);
 		q.registerStoredProcedureParameter("response", String.class, ParameterMode.OUT);
