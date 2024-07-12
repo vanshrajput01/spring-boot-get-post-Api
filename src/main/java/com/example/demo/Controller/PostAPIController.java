@@ -18,7 +18,7 @@ public class PostAPIController {
 	@Autowired
 	private PostServices postServices;
 	
-	@PostMapping(value = "/postapi/AddData",consumes = MediaType.APPLICATION_JSON_VALUE , produces = MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(value = "/AddData",consumes = MediaType.APPLICATION_JSON_VALUE , produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseDto addData(@RequestBody RequestDto data) throws JsonProcessingException {
 		
 		return this.postServices.addData(data);

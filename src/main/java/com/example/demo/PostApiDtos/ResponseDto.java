@@ -5,8 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ResponseDto {
 	
-	@JsonProperty("outputParamters")
-	public Object OutputParamters;
+	@JsonProperty("OutputParameters")
+	public Object OutputParameters;
 	
 	
 
